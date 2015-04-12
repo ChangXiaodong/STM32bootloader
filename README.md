@@ -15,11 +15,13 @@ Note: For the connection of pins in steps 2 and 3, you can change the order in a
 
 Python script which will talk to the STM32 bootloader to upload and download firmware.
 
-#Usage: ./bin.py [-p program] [-l list] [-h help]
+#Usage: 
+	   ./bin.py [-p program] [-l list] [-h help]
        ./run.py [-A All]Start all nodes [-l list]list exist ports [port num]
 	   ./kill.py [-A All]Start all nodes [-l list]list exist ports [port num]
 
-#Example: bin.py -p somefile.bin
+#Example: 
+		 bin.py -p somefile.bin
 		 This will pre-erase flash, write somefile.bin to the flash on the device, and then perform a verification after writing is finished.
          run.py -A 
 		 start all nodes
