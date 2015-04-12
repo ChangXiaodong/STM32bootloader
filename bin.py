@@ -82,6 +82,9 @@ class BootLoaderJobs():
 	def	releasePort(self):
 		self.cmd.releaseChip()
 		self.cmd.sp.close()
+	def killport(self):
+		self.cmd.killChip()
+		self.cmd.sp.close()
 
 if __name__	== "__main__":
 	
@@ -125,7 +128,7 @@ if __name__	== "__main__":
 	bljobs = BootLoaderJobs(serialPort)
 	bljobs.initialChip()
 	bljobs.downloadJob(args[0])
-	bljobs.releasePort()
+	bljobs.killport()
 			
 	
 
