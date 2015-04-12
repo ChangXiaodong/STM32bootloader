@@ -66,6 +66,7 @@ if __name__	== "__main__":
 	portlist.enumerate_serial_ports()
 	for portnum in range(len(portlist.portList)):
 		portlistsort.append(str(portlist.portList[portnum][1]))
+	portlistsort=sorted(portlistsort)
 	if(len(args)>0):
 		getport = str(args[0])
 		if '-' in getport:
