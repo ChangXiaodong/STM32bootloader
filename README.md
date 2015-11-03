@@ -23,11 +23,9 @@ Python script which will talk to the STM32 bootloader to upload and download fir
 #Example: 
 		 bin.py -p somefile.bin
 		 This will pre-erase flash, write somefile.bin to the flash on the device, and then perform a verification after writing is finished.
-         run.py -A 
-		 start all nodes
-		 run.py	-l 
-		 list all ports
-		 run.py	5-20 
+         if you wangt start all nodes----Input:run.py -A 
+	run.py	-l    for list all ports
+	run.py	5-20  for
 		 start COM5 to COM20
 		 run.py	5-20 15 16 17 
 		 start COM5 to COM20 except COM15,COM16,COM17
